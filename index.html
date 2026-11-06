@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rclone maison — sauvegarde personnelle</title>
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; }
+  h1 { font-size: 1.6em; } h2 { margin-top: 2em; font-size: 1.25em; }
+  small { color: #666; }
+</style>
+</head>
+<body>
+<h1>rclone maison</h1>
+<p>« rclone maison » est un outil <strong>personnel et non commercial</strong> de sauvegarde, utilisé uniquement par son
+propriétaire, Samuel Guérin. Il envoie chaque nuit une copie chiffrée des sauvegardes de sa maison connectée
+(Home Assistant) vers son propre espace Google Drive, à l'aide du logiciel libre <a href="https://rclone.org">rclone</a>.</p>
+<p>Ce service n'est pas proposé au public.</p>
+
+<h2 id="confidentialite">Règles de confidentialité</h2>
+<ul>
+  <li><strong>Accès limité</strong> : l'application demande uniquement l'autorisation Google Drive
+    <code>drive.file</code>. Elle ne voit et ne modifie que les fichiers qu'elle a créés elle-même, jamais les autres
+    fichiers du Drive.</li>
+  <li><strong>Données traitées</strong> : uniquement les archives de sauvegarde du propriétaire, chiffrées avant l'envoi.
+    Aucune autre donnée Google (contacts, e-mails, profil…) n'est lue.</li>
+  <li><strong>Aucun partage</strong> : aucune donnée n'est vendue, partagée, ni transmise à un tiers. Aucune publicité,
+    aucun suivi, aucun cookie.</li>
+  <li><strong>Conservation</strong> : les sauvegardes sont gardées 14 jours sur le Drive du propriétaire puis supprimées
+    automatiquement.</li>
+  <li><strong>Révocation</strong> : l'accès peut être retiré à tout moment sur
+    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  <li><strong>Contact</strong> : samuel.guerin@gmail.com</li>
+</ul>
+<p>L'utilisation et le transfert des informations reçues des API Google respectent les
+<a href="https://developers.google.com/terms/api-services-user-data-policy">règles relatives aux données utilisateur des services d'API Google</a>,
+y compris les exigences d'utilisation limitée.</p>
+
+<h2 id="conditions">Conditions d'utilisation</h2>
+<p>Outil à usage strictement personnel, fourni sans garantie. Il n'est pas destiné à d'autres utilisateurs.</p>
+
+<p><small>Dernière mise à jour : 6 novembre 2026</small></p>
+</body>
+</html>
